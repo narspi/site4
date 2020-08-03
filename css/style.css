@@ -73,6 +73,7 @@ button {
     cursor: pointer;
     border: none;
     background-color: transparent;
+    font: inherit;
 }
 
 p {
@@ -250,18 +251,22 @@ body {
 }
 
 .main__video-btn {
-    color: aqua;
     position: absolute;
-    bottom: -20px;
+    bottom: 0px;
     left: 50%;
-    transform: translateX(-50%);
     z-index: 2;
     max-width: 200px;
+    display: block;
+    transform: translate(-50%,50%);
+}
+
+.main__video-btn img {
+    border-radius: 0;
 }
 
 .modal {
     position: absolute;
-    left: 0;
+    left: -100%;
     top: 0;
     width: 100%;
     height: 100vh;
@@ -269,6 +274,11 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
+    transition: left .5s;
+}
+
+.modal--active {
+    left: 0;
 }
 
 .modal::before {
@@ -302,6 +312,8 @@ body {
     transform: translateY(-100%);
     border-radius: 3px 3px 0 0;
     transition: background-color .3s;
+    text-transform: uppercase;
+    font-weight: 700;
 }
 
 .close-btn:hover {
