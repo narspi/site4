@@ -14,10 +14,13 @@ const   mainForm = document.querySelector('.main__form'),
 
 
 document.addEventListener('click', event => {
-    console.log(event.target);
-    console.log(event.target.closest('.main__form'));
-    if (!(event.target.closest('.main__form'))) 
-    mainForm.classList.add('main__form--active');
+    mainForm.classList.remove('main__form--accent');
+    setTimeout(()=> {
+        console.log(event.target);
+        console.log(event.target.closest('.main__form'));
+        if (!(event.target.closest('.main__form'))) 
+        mainForm.classList.add('main__form--accent');
+    }, 100);
 });
 
 mainVideoBtn.addEventListener('click', ()=> {

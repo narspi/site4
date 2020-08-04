@@ -63,6 +63,7 @@ html {
 a {
     text-decoration: none;
     color: inherit;
+    font: inherit;
 }
 
 ul {
@@ -107,6 +108,47 @@ body {
     filter: blur(10px);
 }
 
+.btn {
+    display: block;
+    position: relative;
+    background-image: linear-gradient(to top, #EAA001,#FEDB8F);
+    transition: transform .2s;
+    box-shadow:  0px 5px 2px 0px #8A6104;
+    color: rgb(46, 41, 41);
+    text-transform: uppercase;
+    font-weight: 700;
+    overflow: hidden;
+}
+
+.btn:hover {
+    transform: translateY(5px);
+}
+
+.btn span {
+    position: absolute;
+    height: 120%;
+    width: 10px;
+    background-color: rgba(255, 255, 255, 0.61);
+    left: 0;
+    top: -5px;
+    animation: 5s blick ease-out infinite;
+    transform: rotate(15deg);
+}
+
+@keyframes blick {
+    0% {
+        left: 0;
+    }
+
+    25% {
+        left: 120%;
+    }
+
+    100% {
+        left: 120%;
+    }
+}
+
 .header {
     position: absolute;
     width: 100%;
@@ -118,7 +160,26 @@ body {
     justify-content: space-between;
     align-items: center;
     min-height: 80px;
+}
 
+.header__btn {
+    padding: 15px 45px 15px 25px;
+    border-radius: 25px /50%;
+    line-height: 1;
+}
+
+.header__btn::before {
+    content: "";
+    height: 19px;
+    width: 18px;
+    background-image: url(../images/whatsup.svg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    position: absolute;
+    right: 20px;
+    top: 48%;
+    transform: translateY(-50%);
 }
 
 .main {
@@ -143,6 +204,7 @@ body {
 .main__inner {
     display: flex;
     justify-content: space-around;
+    align-items: flex-start;
 }
 
 .main__title {
@@ -164,18 +226,18 @@ body {
     text-align: center;
 }
 
-.main__form--active {
+.main__form--accent {
     animation: .2s animate linear;
     animation-iteration-count: 1;
 }
 
 @keyframes animate {
     0% {
-        transform: rotate(10deg);
+        transform: rotate(0deg);
     }
 
     25% {
-        transform: rotate(0deg);
+        transform: rotate(10deg);
     }
 
     50% {
@@ -220,49 +282,63 @@ body {
     font-size: 20px;
     font-weight: 500;
     border-radius: 8px;
+
+}
+
+.form input::placeholder {
     text-align: center;
 }
 
 .main__form-btn {
-    padding: 10px;
     padding: 25px 31px 23px;
-    background-image: linear-gradient(to top, #EAA001,#FEDB8F);
     border-radius: 35px / 50%;
-    text-transform: uppercase;
-    color: rgb(46, 41, 41);
-    transition: transform .2s;
-    box-shadow:  0px 5px 2px 0px #8A6104;
-    font: inherit;
-    font-weight: 700;
     font-size: 22px;
 }
 
-.main__form-btn:hover {
-    transform: translateY(5px);
-}
+
 
 .main__video {
     width: 35vw;
     position: relative;
+    
 }
 
 .main__video img {
     border-radius: 10px;
 }
-
+/* linear-gradient(to top, #EAA001,#FEDB8F) */
 .main__video-btn {
     position: absolute;
+    display: block;
     bottom: 0px;
     left: 50%;
     z-index: 2;
-    max-width: 200px;
     display: block;
     transform: translate(-50%,50%);
+    background-color: rgb(5, 9, 63);
+    font-weight: 500;
+    font-size: 20px;
+    padding: 12px 85px 12px 25px;
+    text-transform: uppercase;
+    border-radius: 25px / 50%;
+    color: #fff;
 }
 
-.main__video-btn img {
-    border-radius: 0;
+.main__video-btn::before {
+    content: "";
+    position: absolute;
+    background-image: url(../images/video-icon.svg);
+    width: 70px;
+    height: 70px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+
 }
+
 
 .modal {
     position: absolute;
