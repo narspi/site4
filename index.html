@@ -6,65 +6,255 @@
         <title>
         </title>
         <link rel="stylesheet" href="css/normalize.css">
+        <link rel="stylesheet" href="css/swiper.min.css">
         <link rel="stylesheet" href="css/style.css">
     </head>
     <body>
         <header class="header">
-            <div class="container">
-                <div class="header__inner">
-                    <div class="logo">
-                        <a href="#">
-                            <img src="images/logo.svg">
+            <div class="container header-container">
+                <div class="header-top">
+                    <div class="header-top__inner">
+                        <div class="logo">
+                            <a href="#">
+                                <img src="images/logo.svg">
+                            </a>
+                        </div>
+                        <nav class="menu">
+                            <ul class="menu__list">
+                                <li class="menu__item">
+                                    <a class="menu__link" href="#">Услуги</a>
+                                </li>
+                                <li class="menu__item">
+                                    <a class="menu__link" href="#">Компания</a>
+                                </li>
+                                <li class="menu__item">
+                                    <a class="menu__link" href="#">Партнеры</a>
+                                </li>
+                                <li class="menu__item">
+                                    <a class="menu__link" href="#">Контакты</a>
+                                </li>
+                            </ul>
+                        </nav>
+                        <a class="phone header__phone" href="tel:+79876656620">
+                            <span class="phone-pre">+7 987</span> 665 66 20 
+                            <span class="phone-order">Заказать звонок</span>
                         </a>
                     </div>
-                    <div class="header__text">Профессиональная настройка рекламы по всей России<br>От специалиста с опытом 8 лет. Экслюзивное качество.</div>
-                    <a class="btn header__btn" href="https://api.whatsapp.com/send?phone=79587617765&text=%D0%97%D0%B4%D1%80%D0%B0%D0%B2%D1%81%D1%82%D0%B2%D1%83%D0%B9%D1%82%D0%B5%20%D1%8F%20%D0%BF%D0%BE%20%D0%BF%D0%BE%D0%B2%D0%BE%D0%B4%D1%83%20%D0%BD%D0%B0%D1%81%D1%82%D1%80%D0%BE%D0%B9%D0%BA%D0%B8%20%D0%AF%D0%BD%D0%B4%D0%B5%D0%BA%D1%81.%D0%94%D0%B8%D1%80%D0%B5%D0%BA%D1%82.">whatsup<span></span></a>
+                </div>
+                <div class="header-bottom">
+                    <h1 class="header__title">Современные инженерные системы для вашего бизнеса</h1>
+                    <div class="header__subtitle">Компания «АСКО» создаст надежную инженерную инфраструктуру для зданий, сооружений и ЦОД</div>
+                    <button class="btn header__btn">Получить консультацию</button>
                 </div>
             </div>
         </header>
-        <main class="main">
+        <section class="systems">
             <div class="container">
-                <h1 class="main__title">Настройка рекламы<br> Яндекс.Директ под ключ</h1>
-                <h2 class="main__subtitle">Ручная тонкая настройка.<br> Экслюзивное качество нацеленное на вашу прибыль</h2>
-                <div class="main__inner">
-                    <div class="main__video">
-                        <img src="images/image_main.gif" alt="">
-                        <button class="main__video-btn">посмотрите видео</button>
-                    </div>
-                    <div class="main__form">
-                        <h3 class="main__form-title">Оставте заявку и получите</h3>
-                        <ul class="main__form-list">
-                            <li class="main__form-item">
-                                <img src="images/icon-1.svg" alt="">
-                                <p class="main__form-info">после того как вы оставите заявку мы пришлем вам коммерческое предложение для вашего бизнеса с полными расчётами чтобы вы понимали что в итоге вы получите дорогие друзья</p>
-                                <div class="main__form-name">Коммерческое</div>
-                            </li>
-                            <li class="main__form-item">
-                                <img src="images/icon-2.svg" alt="">
-                                <p class="main__form-info">после того как вы оставите заявку мы пришлем вам коммерческое предложение для вашего бизнеса с полными расчётами чтобы вы понимали что в итоге вы получите дорогие друзья</p>
-                                <div class="main__form-name">Прогноз и кейсы</div>
-                            </li>
-                            <li class="main__form-item">
-                                <img src="images/icon-3.svg" alt="">
-                                <p class="main__form-info">после того как вы оставите заявку мы пришлем вам коммерческое предложение для вашего бизнеса с полными расчётами чтобы вы понимали что в итоге вы получите дорогие друзья</p>
-                                <div class="main__form-name">Консультация</div>
-                            </li>
+                <div class="systems__pre-title pre-title">Наши услуги</div>
+                <h2 class="systemss__title title">Инженерные системы зданий и сооружений</h2>
+                <p class="systems__pre-text pre-text">Комплекс услуг по созданию инженерных систем
+                    зданий и сооружений любой сложности
+                </p>
+                <div class="systems__items">
+                    <div class="systems__item systems__item--big systems__item--border">
+                        <div class="systems__item-title">Системы электроснабжения</div>
+                        <ul class="systems__list">
+                            <li class="systems__list-item">Комплекс систем электроснабжения здания</li>
+                            <li class="systems__list-item">КСЭ промышленного предприятия</li>
+                            <li class="systems__list-item">Гарантированное электроснабжение</li>
+                            <li class="systems__list-item">Бесперебойное электроснабжение</li>
                         </ul>
-                        <form class="form">
-                            <input type="text" placeholder="Как Вас зовут?">
-                            <input type="text" placeholder="Ваш номер телефона?">
-                            <button class="btn main__form-btn" type="submit">ОСТАВИТЬ ЗАЯВКУ<span></span></button> 
+                    </div>
+                    <div class="systems__item systems__item--small systems__item-bgcolor">
+                        <div class="systems__item-title">Системы кондиционирования и вентиляции</div>
+                        
+                    </div>
+                    <div class="systems__item systems__item--small systems__item--tcolor">
+                        <div class="systems__item-title">Создание и модернизация комплекса инженерных систем зданий</div>
+                        
+                    </div>
+                    <div class="systems__item systems__item--big systems__item--border">
+                        <div class="systems__item-title">Слаботочные системы</div>
+                        <ul class="systems__list">
+                            <li class="systems__list-item">Структурированные кабельные системы (СКС)</li>
+                            <li class="systems__list-item">Комплекс систем безопасности (СКУД, видеонаблюдение, охранные системы)</li>
+                            <li class="systems__list-item">Прочие системы (радиотрансляция, телефонная связь, часофикация, СОУЭ и др.)</li>
+                        </ul>
+                    </div>
+                    <div class="systems__item systems__item--big systems__item-bgcolor">
+                        <div class="systems__item-title">Автоматизация инженерных систем</div>
+                        <ul class="systems__list">
+                            <li class="systems__list-item">Электроснабжения и освещения</li>
+                            <li class="systems__list-item">Вентиляции</li>
+                            <li class="systems__list-item">Холодоснабжения, водоснабжения и канализации</li>
+                        </ul>
+                    </div>
+                    <div class="systems__item systems__item--small systems__item--tcolor">
+                        <div class="systems__item-title">Проконсультируем вас по интересующему вопросу</div>
+                        <div class="systems__item-text">Закажите звонок, мы перезвоним  вам в ближайшее время</div>
+                        <a class="systems__phone">
+                            <img src="images/phone.svg" alt="">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="sys-slider">
+            <div class="container">
+                <div class="sys-slider__pre-title pre-title">Наши услуги</div>
+                <h2 class="sys-slider__title title">Инженерные системы ЦОД</h2>
+                <p class="sys-slider__pre-text pre-text">Набор услуг по аудиту, проектированию,
+                    строительству, последующей поддержке и развитию классических и модульных дата-центров
+                </p>
+                <div class="slider-container">
+                    <div class="sys-slider__line"></div>
+                    <div class="swiper-container">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <div class="sys-slider__circle"></div>
+                                <div class="sys-slider__descr">Комплекс систем электроснабжения</div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="sys-slider__circle"></div>
+                                <div class="sys-slider__descr">Системы кондиционирования </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="sys-slider__circle"></div>
+                                <div class="sys-slider__descr">Информационные системы</div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="sys-slider__circle"></div>
+                                <div class="sys-slider__descr">Структурированные кабельные системы</div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="sys-slider__circle"></div>
+                                <div class="sys-slider__descr">Автоматизация инженерных систем</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="info">
+            <div class="container">
+                <div class="info__inner">
+                    <div class="info__pre-title pre-title">О компании</div>
+                    <h2 class="info__title title">Глубокая экспертиза и широкая партнерская сеть позволяют компании создавать надежные и современные решения</h2>
+                    <p class="info__pre-text pre-text">Компания «АСКО» уже не один год успешно развивается 
+                    на российском рынке и предоставляет своим заказчикам 
+                    из разных отраслей услуги по проектированию и созданию как отдельных подсистем, так и всей инженерной инфраструктуры зданий, сооружений и центров обработки данных «под ключ»
+                    </p>
+                    <button class="btn info__btn">Показать полностью</button>
+                    <div class="info__items">
+                        <div class="info__item">
+                            <div class="info__item-head">
+                                <div class="info__item-title">Опытные
+                                    специалисты</div>
+                                <div class="info__item-number">01</div>
+                            </div>
+                            <p class="info__item-text">Наши специалисты имеют богатый практический опыт реализации сложных проектов</p>
+                        </div>
+                        <div class="info__item">
+                            <div class="info__item-head">
+                                <div class="info__item-title">Комплексный 
+                                    подход</div>
+                                <div class="info__item-number">02</div>
+                            </div>
+                            <p class="info__item-text">Мы реализуем комплексные проекты, включающие в себя интеграцию ИТ 
+                                и инженерных решений</p>
+                        </div>
+                        <div class="info__item">
+                            <div class="info__item-head">
+                                <div class="info__item-title">Профессионализм
+                                    сотрудников</div>
+                                <div class="info__item-number">03</div>
+                            </div>
+                            <p class="info__item-text">Знания наших экспертов подтверждены сертификатами международных организаций</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="parthers">
+            <div class="container">
+                <div class="parthers__pre-title pre-title">Наши парнеры</div>
+                <h2 class="parthers__title title">Гордимся работой с ними</h2>
+
+            </div>
+        </section>
+        <section class="contacts">
+            <div class="container">
+                <div class="contacts__inner">
+                    <div class="contacts__info">
+                        <div class="contacts__pre-title pre-title">Контакты</div>
+                        <a class="contacts__phone" href="tel:+79876656620">+7 987 665 66 20</a>
+                        <br>
+                        <a class="contacts__email" href="mailto:ackomail@gmail.com">ackomail@gmail.com</a>
+                        <div class="contacts__adress-title">Адрес</div>
+                        <div class="contacts__adress">Москва, Серебряный пр. 298 оф. 189</div>
+                        <a class="contacts__info-link" href="">Показать на карте</a>
+                        <div class="contacts__map">
+
+                        </div>
+                    </div>
+                    <div class="contacts__form">
+                        <form action="">
+                            <label for=""></label>
+                            <input type="text" placeholder="Имя">
+                            <input type="text" placeholder="Название компании">
+                            <input type="text" placeholder="+7 (___) ___-__-__">
+                            <input type="text" placeholder="Email">
+                            <textarea placeholder="Комментарий"></textarea>
+                            <button class="btn">Отправить</button>
+                            <label for="">Нажимая на кнопку, я соглашаюсь 
+                                с политикой конфиденциальности</label>
                         </form>
                     </div>
                 </div>
             </div>
-        </main>
-        <div class="modal">
-            <div class="modal__inner">
-                <iframe width="730" height="415" src="https://www.youtube.com/embed/RjQbY27pGvI" frameborder="10" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                <button class="close-btn">Закрыть</button>
+        </section>
+        <footer class="footer">
+            <div class="container">
+                <div class="footer-top">
+                    <div class="header-top">
+                        <div class="header-top__inner">
+                            <div class="logo">
+                                <a href="#">
+                                    <img src="images/logo.svg">
+                                </a>
+                            </div>
+                            <nav class="menu">
+                                <ul class="menu__list">
+                                    <li class="menu__item">
+                                        <a class="menu__link" href="#">Услуги</a>
+                                    </li>
+                                    <li class="menu__item">
+                                        <a class="menu__link" href="#">Компания</a>
+                                    </li>
+                                    <li class="menu__item">
+                                        <a class="menu__link" href="#">Партнеры</a>
+                                    </li>
+                                    <li class="menu__item">
+                                        <a class="menu__link" href="#">Контакты</a>
+                                    </li>
+                                </ul>
+                            </nav>
+                            <a class="phone header__phone" href="tel:+79876656620">
+                                <span class="phone-pre">+7 987</span> 665 66 20 
+                                <span class="phone-order">Заказать звонок</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer-bottom">
+                    <div class="footer-bottom__inner">
+                        <div class="footer-bottom__copy">acko <img src="images/copy.svg" alt="copy"> 2020</div>
+                        <a class="footer-bottom__privacy" href="#">Политика конфиденциальности</a>
+                    </div>
+                </div>
             </div>
-    </div>
+        </footer>
+        <script src="js/swiper.min.js"></script>
         <script src="js/main.js"></script>
     </body>
 </html>
